@@ -25,11 +25,11 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>32</string>
+            <string>match3_size</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>32</string>
+            <string>match3_size</string>
           </argument>
         </arguments>
       </action>

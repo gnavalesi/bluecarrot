@@ -13,7 +13,7 @@ if(ds_list_size(selected)>=2){ //No ejecutar para listas con menos de dos elemen
              }
         }
         //Sino...
-        else if(object_is_ancestor(firstSelected.object_index,obj_resource)){
+        else if(object_is_ancestor(firstSelected.object_index,obj_match3Block)){
             var special = ds_list_size(selected)>=5;
             if(ds_list_size(selected)>=3){
                 for(i=0; i<ds_list_size(selected);i++){

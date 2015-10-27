@@ -10,6 +10,7 @@
       <sprite>sprites\spr_block</sprite>
       <sprite>sprites\spr_cancel</sprite>
       <sprite>sprites\spr_resource</sprite>
+      <sprite>sprites\spr_mana</sprite>
       <sprite>sprites\spr_spell1</sprite>
     </sprites>
     <sprite>sprites\spr_play</sprite>
@@ -62,6 +63,9 @@
           <scripts name="resources">
             <script>scripts\scr_resourceDestroy.gml</script>
           </scripts>
+          <scripts name="mana">
+            <script>scripts\scr_manaDestroy.gml</script>
+          </scripts>
         </scripts>
       </scripts>
     </scripts>
@@ -108,6 +112,13 @@
             <objects name="special">
               <object>objects\obj_collectAll</object>
             </objects>
+            <objects name="mana">
+              <object>objects\obj_mana</object>
+              <object>objects\obj_redMana</object>
+              <object>objects\obj_yellowMana</object>
+              <object>objects\obj_blueMana</object>
+              <object>objects\obj_greenMana</object>
+            </objects>
           </objects>
           <object>objects\obj_source</object>
         </objects>
@@ -129,9 +140,9 @@
     <room>rooms\rm_match3</room>
   </rooms>
   <constants number="3">
-    <constant name="match3_height">10</constant>
-    <constant name="match3_across">10</constant>
-    <constant name="match3_size">32</constant>
+    <constant name="match3_height">5</constant>
+    <constant name="match3_across">5</constant>
+    <constant name="match3_size">64</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
