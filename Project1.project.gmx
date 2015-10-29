@@ -21,94 +21,113 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <scripts name="match3">
-      <scripts name="controllers">
-        <scripts name="dragController">
-          <script>scripts\src_initDragController.gml</script>
-          <script>scripts\scr_destroyDragController.gml</script>
-          <scripts name="mouseFunctions">
-            <scripts name="select">
-              <script>scripts\scr_removeSelected.gml</script>
-              <script>scripts\scr_mouseSelectEffect.gml</script>
-              <script>scripts\scr_lineThroughSelected.gml</script>
-              <script>scripts\src_mouseSelectInit.gml</script>
-              <script>scripts\scr_mouseSelectDestroy.gml</script>
-              <script>scripts\scr_dragSelect.gml</script>
-            </scripts>
-            <scripts name="spells">
-              <script>scripts\scr_mouseSpellEffect.gml</script>
-              <script>scripts\scr_mouseSpellApply.gml</script>
-              <script>scripts\scr_applyCreateWood.gml</script>
-              <script>scripts\scr_applyCreateMetal.gml</script>
-              <script>scripts\scr_applyCreateStone.gml</script>
-              <script>scripts\scr_applyCreateFood.gml</script>
+    <scripts name="games">
+      <scripts name="gameStateController">
+        <scripts name="gameState">
+          <script>scripts\scr_initGameState.gml</script>
+          <script>scripts\scr_destroyGameState.gml</script>
+        </scripts>
+        <scripts name="saveGame">
+          <script>scripts\scr_load.gml</script>
+          <script>scripts\scr_save.gml</script>
+          <script>scripts\scr_deleteSave.gml</script>
+        </scripts>
+      </scripts>
+      <scripts name="match3">
+        <scripts name="mouseFunctions">
+          <script>scripts\scr_canMatch.gml</script>
+          <script>scripts\scr_resetMouseFunction.gml</script>
+          <scripts name="select">
+            <script>scripts\scr_removeSelected.gml</script>
+            <script>scripts\scr_mouseSelectEffect.gml</script>
+            <script>scripts\scr_lineThroughSelected.gml</script>
+            <script>scripts\src_mouseSelectInit.gml</script>
+            <script>scripts\scr_mouseSelectDestroy.gml</script>
+            <script>scripts\scr_dragSelect.gml</script>
+          </scripts>
+          <scripts name="spells">
+            <script>scripts\scr_mouseSpellEffect.gml</script>
+            <script>scripts\scr_canPayCost.gml</script>
+            <script>scripts\scr_spellInit.gml</script>
+            <script>scripts\scr_spellDestroy.gml</script>
+            <scripts name="create">
+              <script>scripts\scr_applyCreateSpell.gml</script>
+              <scripts name="wood">
+                <script>scripts\scr_createWoodInit.gml</script>
+              </scripts>
+              <scripts name="metal">
+                <script>scripts\scr_createMetalInit.gml</script>
+              </scripts>
+              <scripts name="stone">
+                <script>scripts\scr_createStoneInit.gml</script>
+              </scripts>
+              <scripts name="food">
+                <script>scripts\scr_createFoodInit.gml</script>
+              </scripts>
             </scripts>
           </scripts>
         </scripts>
-        <scripts name="gameArea">
-          <script>scripts\scr_initGameArea.gml</script>
-          <script>scripts\scr_drawMatch3GUI.gml</script>
-        </scripts>
-        <script>scripts\scr_canMatch.gml</script>
-        <scripts name="spell">
-          <script>scripts\scr_selectSpell.gml</script>
-        </scripts>
-      </scripts>
-      <scripts name="blocks">
-        <scripts name="source">
-          <script>scripts\scr_sourceInit.gml</script>
-          <script>scripts\src_sourceStep.gml</script>
-          <script>scripts\scr_sourceDestroy.gml</script>
+        <scripts name="controllers">
+          <scripts name="mouseController">
+            <script>scripts\src_initDragController.gml</script>
+            <script>scripts\scr_destroyDragController.gml</script>
+          </scripts>
+          <scripts name="gameArea">
+            <script>scripts\scr_initGameArea.gml</script>
+            <script>scripts\scr_drawMatch3GUI.gml</script>
+          </scripts>
         </scripts>
         <scripts name="pieces">
-          <script>scripts\scr_blockDestroy.gml</script>
-          <script>scripts\scr_blockFall.gml</script>
-          <script>scripts\scr_blockInit.gml</script>
-          <scripts name="resources">
-            <script>scripts\scr_resourceDestroy.gml</script>
+          <scripts name="source">
+            <script>scripts\scr_sourceInit.gml</script>
+            <script>scripts\src_sourceStep.gml</script>
+            <script>scripts\scr_sourceDestroy.gml</script>
           </scripts>
-          <scripts name="mana">
-            <script>scripts\scr_manaDestroy.gml</script>
+          <scripts name="blocks">
+            <scripts name="match3Block">
+              <script>scripts\scr_blockInit.gml</script>
+              <script>scripts\scr_blockDestroy.gml</script>
+              <script>scripts\scr_blockFall.gml</script>
+            </scripts>
+            <scripts name="resources">
+              <script>scripts\scr_resourceDestroy.gml</script>
+            </scripts>
+            <scripts name="mana">
+              <script>scripts\scr_manaDestroy.gml</script>
+            </scripts>
           </scripts>
         </scripts>
-      </scripts>
-    </scripts>
-    <scripts name="game">
-      <scripts name="saveGame">
-        <script>scripts\scr_load.gml</script>
-        <script>scripts\scr_save.gml</script>
-        <script>scripts\scr_deleteSave.gml</script>
-      </scripts>
-      <scripts name="gameState">
-        <script>scripts\scr_initGameState.gml</script>
-        <script>scripts\scr_destroyGameState.gml</script>
+        <scripts name="UI">
+          <scripts name="spell">
+            <script>scripts\scr_selectSpell.gml</script>
+          </scripts>
+        </scripts>
       </scripts>
     </scripts>
   </scripts>
   <objects name="objects">
-    <objects name="game">
+    <objects name="games">
       <object>objects\obj_gameStateController</object>
       <objects name="match3">
-        <object>objects\obj_block</object>
-        <object>objects\obj_cancel</object>
-        <object>objects\obj_spell</object>
-        <object>objects\obj_collidable</object>
-        <objects name="controllers">
-          <object>objects\obj_gameAreaController</object>
-          <object>objects\obj_dragController</object>
-          <objects name="mouseFunctions">
-            <object>objects\obj_functionSelect</object>
-            <objects name="spells">
-              <object>objects\obj_functionSpell</object>
-              <object>objects\obj_createWood</object>
-              <object>objects\obj_createMetal</object>
-              <object>objects\obj_createStone</object>
-              <object>objects\obj_createFood</object>
-            </objects>
+        <objects name="mouseFunctions">
+          <object>objects\obj_functionSelect</object>
+          <objects name="spells">
+            <object>objects\obj_functionSpell</object>
+            <object>objects\obj_createWood</object>
+            <object>objects\obj_createMetal</object>
+            <object>objects\obj_createStone</object>
+            <object>objects\obj_createFood</object>
           </objects>
         </objects>
-        <objects name="blocks">
-          <objects name="pieces">
+        <objects name="controllers">
+          <object>objects\obj_gameAreaController</object>
+          <object>objects\obj_mouseController</object>
+        </objects>
+        <objects name="pieces">
+          <object>objects\obj_source</object>
+          <object>objects\obj_collidable</object>
+          <object>objects\obj_block</object>
+          <objects name="blocks">
             <object>objects\obj_match3Block</object>
             <objects name="resources">
               <object>objects\obj_resource</object>
@@ -128,7 +147,10 @@
               <object>objects\obj_greenMana</object>
             </objects>
           </objects>
-          <object>objects\obj_source</object>
+        </objects>
+        <objects name="UI">
+          <object>objects\obj_spell</object>
+          <object>objects\obj_cancel</object>
         </objects>
       </objects>
     </objects>

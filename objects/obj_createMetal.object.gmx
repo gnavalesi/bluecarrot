@@ -25,11 +25,11 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scr_applyCreateMetal</script>
+            <script>scr_applyCreateSpell</script>
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
+            <string>obj_metal</string>
           </argument>
           <argument>
             <kind>0</kind>

@@ -89,7 +89,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>obj_dragController</object>
+            <object>obj_mouseController</object>
           </argument>
           <argument>
             <kind>0</kind>
