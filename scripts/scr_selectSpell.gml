@@ -1,5 +1,6 @@
 with(obj_dragController){
+    var nextSpell = other.spell
     with(mouseFunction){
-        instance_change(obj_functionSpell, true);
+        instance_change(nextSpell, true);
     }
 }

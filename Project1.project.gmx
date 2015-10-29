@@ -38,6 +38,10 @@
             <scripts name="spells">
               <script>scripts\scr_mouseSpellEffect.gml</script>
               <script>scripts\scr_mouseSpellApply.gml</script>
+              <script>scripts\scr_applyCreateWood.gml</script>
+              <script>scripts\scr_applyCreateMetal.gml</script>
+              <script>scripts\scr_applyCreateStone.gml</script>
+              <script>scripts\scr_applyCreateFood.gml</script>
             </scripts>
           </scripts>
         </scripts>
@@ -96,6 +100,10 @@
             <object>objects\obj_functionSelect</object>
             <objects name="spells">
               <object>objects\obj_functionSpell</object>
+              <object>objects\obj_createWood</object>
+              <object>objects\obj_createMetal</object>
+              <object>objects\obj_createStone</object>
+              <object>objects\obj_createFood</object>
             </objects>
           </objects>
         </objects>
