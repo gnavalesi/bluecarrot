@@ -40,7 +40,7 @@
             <script>scripts\scr_resetMouseFunction.gml</script>
           </scripts>
           <scripts name="select">
-            <script>scripts\scr_removeSelected.gml</script>
+            <script>scripts\scr_collectSelected.gml</script>
             <script>scripts\scr_mouseSelectEffect.gml</script>
             <script>scripts\scr_lineThroughSelected.gml</script>
             <script>scripts\src_mouseSelectInit.gml</script>
@@ -93,16 +93,13 @@
             <script>scripts\scr_sourceDestroy.gml</script>
           </scripts>
           <scripts name="blocks">
+            <scripts name="general">
+              <script>scripts\scr_collect.gml</script>
+            </scripts>
             <scripts name="match3Block">
               <script>scripts\scr_blockInit.gml</script>
               <script>scripts\scr_blockDestroy.gml</script>
               <script>scripts\scr_blockFall.gml</script>
-            </scripts>
-            <scripts name="resources">
-              <script>scripts\scr_resourceDestroy.gml</script>
-            </scripts>
-            <scripts name="mana">
-              <script>scripts\scr_manaDestroy.gml</script>
             </scripts>
           </scripts>
         </scripts>

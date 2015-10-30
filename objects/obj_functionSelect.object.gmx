@@ -151,7 +151,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scr_removeSelected</script>
+            <script>scr_collectSelected</script>
           </argument>
           <argument>
             <kind>0</kind>
