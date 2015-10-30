@@ -4,7 +4,8 @@ if(scr_canPayCost(cost)){
         with(instance){
             instance_change(argument0, true);
         }
-    }
+        scr_payCost(cost);
+    }    
 }
 
 event_inherited();

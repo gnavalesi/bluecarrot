@@ -35,8 +35,10 @@
       </scripts>
       <scripts name="match3">
         <scripts name="mouseFunctions">
-          <script>scripts\scr_canMatch.gml</script>
-          <script>scripts\scr_resetMouseFunction.gml</script>
+          <scripts name="general">
+            <script>scripts\scr_canMatch.gml</script>
+            <script>scripts\scr_resetMouseFunction.gml</script>
+          </scripts>
           <scripts name="select">
             <script>scripts\scr_removeSelected.gml</script>
             <script>scripts\scr_mouseSelectEffect.gml</script>
@@ -46,12 +48,19 @@
             <script>scripts\scr_dragSelect.gml</script>
           </scripts>
           <scripts name="spells">
-            <script>scripts\scr_mouseSpellEffect.gml</script>
-            <script>scripts\scr_canPayCost.gml</script>
-            <script>scripts\scr_spellInit.gml</script>
-            <script>scripts\scr_spellDestroy.gml</script>
+            <scripts name="helpers">
+              <script>scripts\scr_canPayCost.gml</script>
+              <script>scripts\scr_payCost.gml</script>
+              <script>scripts\scr_mouseSpellEffect.gml</script>
+            </scripts>
+            <scripts name="general">
+              <script>scripts\scr_spellInit.gml</script>
+              <script>scripts\scr_spellDestroy.gml</script>
+            </scripts>
             <scripts name="create">
-              <script>scripts\scr_applyCreateSpell.gml</script>
+              <scripts name="general">
+                <script>scripts\scr_applyCreateSpell.gml</script>
+              </scripts>
               <scripts name="wood">
                 <script>scripts\scr_createWoodInit.gml</script>
               </scripts>
