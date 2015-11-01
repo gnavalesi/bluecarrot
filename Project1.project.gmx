@@ -147,10 +147,11 @@
             </objects>
             <objects name="mana">
               <object>objects\obj_mana</object>
-              <object>objects\obj_redMana</object>
-              <object>objects\obj_yellowMana</object>
-              <object>objects\obj_blueMana</object>
-              <object>objects\obj_greenMana</object>
+              <object>objects\obj_fireMana</object>
+              <object>objects\obj_windMana</object>
+              <object>objects\obj_waterMana</object>
+              <object>objects\obj_earthMana</object>
+              <object>objects\obj_spiritMana</object>
             </objects>
           </objects>
         </objects>
