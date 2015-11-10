@@ -11,7 +11,6 @@
       <sprite>sprites\spr_cancel</sprite>
       <sprite>sprites\spr_resource</sprite>
       <sprite>sprites\spr_mana</sprite>
-      <sprite>sprites\spr_spell1</sprite>
     </sprites>
     <sprite>sprites\spr_play</sprite>
     <sprite>sprites\spr_exit</sprite>
@@ -38,11 +37,11 @@
           <scripts name="general">
             <script>scripts\scr_canMatch.gml</script>
             <script>scripts\scr_resetMouseFunction.gml</script>
+            <script>scripts\scr_lineThroughPoints.gml</script>
+            <script>scripts\scr_mouseEffect.gml</script>
           </scripts>
           <scripts name="select">
             <script>scripts\scr_collectSelected.gml</script>
-            <script>scripts\scr_mouseSelectEffect.gml</script>
-            <script>scripts\scr_lineThroughSelected.gml</script>
             <script>scripts\src_mouseSelectInit.gml</script>
             <script>scripts\scr_mouseSelectDestroy.gml</script>
             <script>scripts\scr_dragSelect.gml</script>
@@ -75,6 +74,13 @@
               </scripts>
             </scripts>
           </scripts>
+          <scripts name="castSpell">
+            <script>scripts\scr_castSpellDestroy.gml</script>
+            <script>scripts\scr_selectSpell.gml</script>
+            <script>scripts\scr_castSpellInit.gml</script>
+            <script>scripts\scr_dragRunesSelect.gml</script>
+            <script>scripts\scr_castSpell.gml</script>
+          </scripts>
         </scripts>
         <scripts name="controllers">
           <scripts name="mouseController">
@@ -103,11 +109,6 @@
             </scripts>
           </scripts>
         </scripts>
-        <scripts name="UI">
-          <scripts name="spell">
-            <script>scripts\scr_selectSpell.gml</script>
-          </scripts>
-        </scripts>
       </scripts>
     </scripts>
   </scripts>
@@ -117,6 +118,7 @@
       <objects name="match3">
         <objects name="mouseFunctions">
           <object>objects\obj_functionSelect</object>
+          <object>objects\obj_functionCastSpell</object>
           <objects name="spells">
             <object>objects\obj_functionSpell</object>
             <object>objects\obj_createWood</object>
@@ -128,6 +130,17 @@
         <objects name="controllers">
           <object>objects\obj_gameAreaController</object>
           <object>objects\obj_mouseController</object>
+          <objects name="runesController">
+            <object>objects\obj_runesController</object>
+            <objects name="runes">
+              <object>objects\obj_rune</object>
+              <object>objects\obj_rune1</object>
+              <object>objects\obj_rune2</object>
+              <object>objects\obj_rune3</object>
+              <object>objects\obj_rune4</object>
+              <object>objects\obj_rune5</object>
+            </objects>
+          </objects>
         </objects>
         <objects name="pieces">
           <object>objects\obj_source</object>
@@ -156,7 +169,6 @@
           </objects>
         </objects>
         <objects name="UI">
-          <object>objects\obj_spell</object>
           <object>objects\obj_cancel</object>
         </objects>
       </objects>
