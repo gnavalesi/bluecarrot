@@ -1,1 +1,1 @@
-ds_list_destroy(runesSelected)
+ds_list_destroy(runesSelected);

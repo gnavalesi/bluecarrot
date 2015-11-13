@@ -16,6 +16,7 @@
     <sprite>sprites\spr_exit</sprite>
     <sprite>sprites\spr_back</sprite>
     <sprite>sprites\spr_reset</sprite>
+    <sprite>sprites\spr_gameController</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -39,6 +40,7 @@
             <script>scripts\scr_resetMouseFunction.gml</script>
             <script>scripts\scr_lineThroughPoints.gml</script>
             <script>scripts\scr_mouseEffect.gml</script>
+            <script>scripts\scr_setMouseFunction.gml</script>
           </scripts>
           <scripts name="select">
             <script>scripts\scr_collectSelected.gml</script>
