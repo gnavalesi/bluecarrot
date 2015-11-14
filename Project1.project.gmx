@@ -27,6 +27,17 @@
             </sprites>
           </sprites>
         </sprites>
+        <sprites name="controllers">
+          <sprites name="runesController">
+            <sprites name="runes">
+              <sprite>sprites\spr_rune1</sprite>
+              <sprite>sprites\spr_rune2</sprite>
+              <sprite>sprites\spr_rune3</sprite>
+              <sprite>sprites\spr_rune4</sprite>
+              <sprite>sprites\spr_rune5</sprite>
+            </sprites>
+          </sprites>
+        </sprites>
       </sprites>
     </sprites>
   </sprites>
