@@ -6,17 +6,29 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprites name="match3">
-      <sprite>sprites\spr_block</sprite>
-      <sprite>sprites\spr_cancel</sprite>
-      <sprite>sprites\spr_resource</sprite>
-      <sprite>sprites\spr_mana</sprite>
-    </sprites>
     <sprite>sprites\spr_play</sprite>
     <sprite>sprites\spr_exit</sprite>
     <sprite>sprites\spr_back</sprite>
     <sprite>sprites\spr_reset</sprite>
     <sprite>sprites\spr_gameController</sprite>
+    <sprites name="games">
+      <sprites name="match3">
+        <sprite>sprites\spr_block</sprite>
+        <sprite>sprites\spr_cancel</sprite>
+        <sprite>sprites\spr_resource</sprite>
+        <sprites name="pieces">
+          <sprites name="blocks">
+            <sprites name="mana">
+              <sprite>sprites\spr_fireMana</sprite>
+              <sprite>sprites\spr_waterMana</sprite>
+              <sprite>sprites\spr_earthMana</sprite>
+              <sprite>sprites\spr_windMana</sprite>
+              <sprite>sprites\spr_spiritMana</sprite>
+            </sprites>
+          </sprites>
+        </sprites>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
