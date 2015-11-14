@@ -97,6 +97,9 @@
               <scripts name="food">
                 <script>scripts\scr_createFoodInit.gml</script>
               </scripts>
+              <scripts name="soulShard">
+                <script>scripts\scr_createSoulShardInit.gml</script>
+              </scripts>
             </scripts>
           </scripts>
           <scripts name="castSpell">
@@ -150,6 +153,7 @@
             <object>objects\obj_createMetal</object>
             <object>objects\obj_createStone</object>
             <object>objects\obj_createFood</object>
+            <object>objects\obj_createSoulShard</object>
           </objects>
         </objects>
         <objects name="controllers">
@@ -179,6 +183,7 @@
               <object>objects\obj_metal</object>
               <object>objects\obj_wood</object>
               <object>objects\obj_stone</object>
+              <object>objects\obj_soulShard</object>
             </objects>
             <objects name="special">
               <object>objects\obj_collectAll</object>

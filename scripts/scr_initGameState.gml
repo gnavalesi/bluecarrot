@@ -20,3 +20,4 @@ ds_map_add(resourceMap,obj_wood,0);
 ds_map_add(resourceMap,obj_stone,0);
 ds_map_add(resourceMap,obj_metal,0);
 ds_map_add(resourceMap,obj_food,0);
+ds_map_add(resourceMap,obj_soulShard,0);
